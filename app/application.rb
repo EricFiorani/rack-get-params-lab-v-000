@@ -19,6 +19,8 @@ class Application
     end
 
     if req.path.match(/cart/)
+      @@cart = 0
+      resp.write "Your cart is empty"
 
     resp.finish
   end

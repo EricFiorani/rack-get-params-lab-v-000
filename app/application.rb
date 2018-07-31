@@ -22,7 +22,6 @@ class Application
       @@cart = 0
       resp.write "Your cart is empty"
     else
-      @@cart >= 1
       @@cart.each do  |item|
         resp.write "#{item}\n"
       end

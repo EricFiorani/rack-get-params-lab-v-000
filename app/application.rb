@@ -19,7 +19,7 @@ class Application
     end
 
     if req.path.match(/cart/)
-      @@cart = 0
+      @@cart = []
       resp.write "Your cart is empty"
     else
       @@cart.each do |item|

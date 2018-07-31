@@ -21,6 +21,7 @@ class Application
     if req.path.match(/cart/)
       @@cart = 0
       resp.write "Your cart is empty"
+    end
 
     resp.finish
   end
